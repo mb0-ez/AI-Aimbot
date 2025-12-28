@@ -14,9 +14,9 @@ def on_release(key):
         pass
 
 def main():
-    global lunar
-    lunar = Aimbot(collect_data = "collect_data" in sys.argv)
-    lunar.start()
+    global archaim
+    archaim = Aimbot(collect_data = "collect_data" in sys.argv)
+    archaim.start()
 
 def setup():
     path = "lib/config"
@@ -50,15 +50,14 @@ if __name__ == "__main__":
 
     print(colored('''
 
-  _    _   _ _   _    _    ____     _     ___ _____ _____ 
- | |  | | | | \ | |  / \  |  _ \   | |   |_ _|_   _| ____|
- | |  | | | |  \| | / _ \ | |_) |  | |    | |  | | |  _|  
- | |__| |_| | |\  |/ ___ \|  _ <   | |___ | |  | | | |___ 
- |_____\___/|_| \_/_/   \_\_| \_\  |_____|___| |_| |_____|
+    _    ____   ____ _   _    _    ___ __  __  __     ___ 
+   / \  |  _ \ / ___| | | |  / \  |_ _|  \/  | \ \   / / |
+  / _ \ | |_) | |   | |_| | / _ \  | || |\/| |  \ \ / /| |
+ / ___ \|  _ <| |___|  _  |/ ___ \ | || |  | |   \ V / | |
+/_/   \_\_| \_\\____|_| |_/_/   \_\___|_|  |_|    \_/  |_|
                                                                          
 (Neural Network Aimbot)''', "green"))
     
-    print(colored('To get full version of Lunar V2, visit https://gannonr.com/lunar OR join the discord: discord.gg/aiaimbot', "red"))
 
     path_exists = os.path.exists("lib/config/config.json")
     if not path_exists or ("setup" in sys.argv):
